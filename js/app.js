@@ -88,7 +88,7 @@ return kitty;
 }
 kitty()
 
-let qFive = prompt('Do I like sci-fi?');
+function scifi(){let qFive = prompt('Do I like sci-fi?');
 console.log(qFive);
 let Picard = qFive.toLowerCase();
 if (Picard === 'no' || Picard === 'n') {
@@ -99,7 +99,9 @@ if (Picard === 'no' || Picard === 'n') {
   alert('I didn\'t get that. Please submit your answers in the form of "yes" or "no".')
 }
 console.log(Picard);
-
+return scifi;
+}
+scifi()
 // I want to give a final message to the user
 
 alert('Thanks for playing my little game, ' + userName + '. Welcome to my site.')
