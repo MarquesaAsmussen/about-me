@@ -57,7 +57,7 @@ return dance;
 
 dance()
 
-let qThree = prompt('Am I a mom?');
+function mommy(){let qThree = prompt('Am I a mom?');
 console.log(qThree);
 let mom = qThree.toLowerCase();
 if (mom === 'no' || mom === 'n') {
@@ -68,6 +68,10 @@ if (mom === 'no' || mom === 'n') {
   alert('I didn\'t get that. Please submit your answers in the form of "yes" or "no".')
 }
 console.log(mom);
+return mommy;
+}
+
+mommy()
 
 let qFour = prompt('Do I have a cat?');
 console.log(qFour);
