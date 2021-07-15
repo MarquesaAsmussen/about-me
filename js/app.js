@@ -73,7 +73,7 @@ return mommy;
 
 mommy()
 
-let qFour = prompt('Do I have a cat?');
+function kitty(){let qFour = prompt('Do I have a cat?');
 console.log(qFour);
 let cat = qFour.toLowerCase();
 if (cat === 'no' || cat === 'n') {
@@ -84,6 +84,9 @@ if (cat === 'no' || cat === 'n') {
   alert('I didn\'t get that. Please submit your answers in the form of "yes" or "no".')
 }
 console.log(cat);
+return kitty;
+}
+kitty()
 
 let qFive = prompt('Do I like sci-fi?');
 console.log(qFive);
