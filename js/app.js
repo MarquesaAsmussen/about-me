@@ -25,7 +25,7 @@ alert('Welcome ' + userName + '!');
 // give alerts to answer the user
 // then console.log the .toLowerCase value
 
-let qOne = prompt('Did I grow up in California?');
+function growup(){let qOne = prompt('Did I grow up in California?');
 console.log(qOne);
 let california = qOne.toLowerCase();
 if (california === 'no' || california === 'n') {
@@ -36,6 +36,10 @@ if (california === 'no' || california === 'n') {
   alert('I didn\'t get that. Please submit your answers in the form of "yes" or "no".')
 }
 console.log(california);
+return growup;
+}
+
+growup()
 
 let qTwo = prompt('Do I like to dance?');
 console.log(qTwo);
