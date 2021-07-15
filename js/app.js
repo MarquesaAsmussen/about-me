@@ -25,7 +25,7 @@ alert('Welcome ' + userName + '!');
 // give alerts to answer the user
 // then console.log the .toLowerCase value
 
-let qOne = prompt('Did I grow up in California?');
+function growup(){let qOne = prompt('Did I grow up in California?');
 console.log(qOne);
 let california = qOne.toLowerCase();
 if (california === 'no' || california === 'n') {
@@ -36,8 +36,12 @@ if (california === 'no' || california === 'n') {
   alert('I didn\'t get that. Please submit your answers in the form of "yes" or "no".')
 }
 console.log(california);
+return growup;
+}
 
-let qTwo = prompt('Do I like to dance?');
+growup()
+
+function dance(){let qTwo = prompt('Do I like to dance?');
 console.log(qTwo);
 let ballet = qTwo.toLowerCase();
 if (ballet === 'no' || ballet === 'n') {
@@ -48,8 +52,12 @@ if (ballet === 'no' || ballet === 'n') {
   alert('I didn\'t get that. Please submit your answers in the form of "yes" or "no".')
 }
 console.log(ballet);
+return dance;
+}
 
-let qThree = prompt('Am I a mom?');
+dance()
+
+function mommy(){let qThree = prompt('Am I a mom?');
 console.log(qThree);
 let mom = qThree.toLowerCase();
 if (mom === 'no' || mom === 'n') {
@@ -60,8 +68,12 @@ if (mom === 'no' || mom === 'n') {
   alert('I didn\'t get that. Please submit your answers in the form of "yes" or "no".')
 }
 console.log(mom);
+return mommy;
+}
 
-let qFour = prompt('Do I have a cat?');
+mommy()
+
+function kitty(){let qFour = prompt('Do I have a cat?');
 console.log(qFour);
 let cat = qFour.toLowerCase();
 if (cat === 'no' || cat === 'n') {
@@ -72,8 +84,11 @@ if (cat === 'no' || cat === 'n') {
   alert('I didn\'t get that. Please submit your answers in the form of "yes" or "no".')
 }
 console.log(cat);
+return kitty;
+}
+kitty()
 
-let qFive = prompt('Do I like sci-fi?');
+function scifi(){let qFive = prompt('Do I like sci-fi?');
 console.log(qFive);
 let Picard = qFive.toLowerCase();
 if (Picard === 'no' || Picard === 'n') {
@@ -84,7 +99,9 @@ if (Picard === 'no' || Picard === 'n') {
   alert('I didn\'t get that. Please submit your answers in the form of "yes" or "no".')
 }
 console.log(Picard);
-
+return scifi;
+}
+scifi()
 // I want to give a final message to the user
 
 alert('Thanks for playing my little game, ' + userName + '. Welcome to my site.')
