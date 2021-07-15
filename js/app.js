@@ -41,7 +41,7 @@ return growup;
 
 growup()
 
-let qTwo = prompt('Do I like to dance?');
+function dance(){let qTwo = prompt('Do I like to dance?');
 console.log(qTwo);
 let ballet = qTwo.toLowerCase();
 if (ballet === 'no' || ballet === 'n') {
@@ -52,6 +52,10 @@ if (ballet === 'no' || ballet === 'n') {
   alert('I didn\'t get that. Please submit your answers in the form of "yes" or "no".')
 }
 console.log(ballet);
+return dance;
+}
+
+dance()
 
 let qThree = prompt('Am I a mom?');
 console.log(qThree);
